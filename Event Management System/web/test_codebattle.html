@@ -1,0 +1,64 @@
+<html>
+<head>
+    <style>
+           div.transbox {
+  margin: 30px;
+  background-color: #3b3939;
+  border: 1px solid black;
+  opacity: 0.7;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+} label{color: white;}
+
+    </style>
+
+</head>
+<body style="background-image: url('header.jpeg'); background-size: cover;">
+
+<div
+class="content"
+style="background-image: url('header.jpeg'); background-size: cover">
+
+<div class="background">
+<div class="transbox">
+  <p>Code-Battle Exam Form</p><br>
+    <form method="post" action="Test_codebattle">
+    <textarea class="form-control" rows="4" cols="100" name="content" placeholder="Question 1"></textarea><br>
+    <input class="form-control" type="text" name="option_1" placeholder="Option A">
+    <input class="form-control" type="text" name="option_2" placeholder="Option B">
+    <input class="form-control" type="text" name="option_3" placeholder="Option C">
+    <input class="form-control" type="text" name="option_4" placeholder="Option D"><br>
+    
+    
+    <label>Correct Answer</label><br>
+    
+    
+    <label>A</label>
+    <input type="radio" id="option_A" name="correct_ans" value="option_A"><label for="option_A"></label>
+    <label>B</label>
+    <input type="radio" id="option_B" name="correct_ans" value="option_B"><label for="option_B"></label>
+    <label>C</label>
+    <input type="radio" id="option_C" name="correct_ans" value="option_C"><label for="option_C"></label>
+    <label>D</label>
+    <input type="radio" id="option_D" name="correct_ans" value="option_D"><label for="option_D"></label>
+    <br><br><br>
+    
+    
+     
+    
+    
+    
+    
+    <button class="btn btn-primary btn-block" type="submit" value="Test_codebattle">Submit</button>
+    </form>
+</div>
+</div>
+</div>
+</body>
+</html>

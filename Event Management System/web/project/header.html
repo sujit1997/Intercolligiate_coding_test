@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(39, 18, 18);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: rgb(236, 8, 8);
+  color: rgb(236, 8, 8);
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>Audyogik Tantra Shikshan Sanstha's ( A.T.S.S. )</h3>
+  <h1>Institute of Industrial and Computer Management and Research</h1>
+  <h1>TECHNOCASE</h1>
+</div>
+
+<div id="navbar">
+  <a href="homepage.html" style="color: white;">Home</a>
+  <a href="competition.html" style="color: white;">Competition</a>
+  <a href="contactus.html" style="color: white;">Contact Us</a>
+  <a href="aboutus.html" style="color: white;">About Us</a>
+  <a href="signup.html" style="color: white;">Sign Up</a>
+  <a href="login.html" style="color: white;">Log In</a>
+</div>
+
+
+<div class="content">
+  
+ 
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  
+  </body>
+  </html>
